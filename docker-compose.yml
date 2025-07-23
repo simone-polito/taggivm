@@ -1,0 +1,10 @@
+services:
+  taggivm:
+    image: taggivm
+    environment:
+      - MUSIC_LIBRARY_PATH=/home/music
+    container_name: taggivm
+    volumes:
+      - ${MUSIC_LIBRARY_PATH}:/home/music
+    stdin_open: true  # like -i
+    tty: true         # like -t
