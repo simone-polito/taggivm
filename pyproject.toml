@@ -1,0 +1,25 @@
+[project]
+name = "taggivm"
+version = "0.0.1"
+authors = [
+  { name="Simone Cracco", email="simcra04@gmail.com" },
+]
+description = "Automatic music files tagging with metadata from different sources."
+readme = "README.md"
+requires-python = ">=3.12"
+license = "MIT"
+license-files = ["LICEN[CS]E*"]
+dependencies = [
+    "click>=8.2.1",
+]
+
+[project.scripts]
+taggivm = "cli:cli"
+
+[project.urls]
+Repository = "https://github.com/"
+
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
