@@ -10,7 +10,8 @@ requires-python = ">=3.12"
 license = "MIT"
 license-files = ["LICEN[CS]E*"]
 dependencies = [
-    "click>=8.2.1",
+    "click",
+    "python-dotenv"
 ]
 
 [project.scripts]

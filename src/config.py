@@ -1,20 +1,15 @@
-import json
+import os
+from dotenv import load_dotenv
 from pathlib import Path
-from typing import Any
 
-
-CONFIG_DIR = Path.home() / ".config" / "taggivm"
-CONFIG_FILE = CONFIG_DIR / "config.json"
+# global variables
 DEFAULT_MUSIC_DIR = Path.home() / "music"
+# DEFAULT_DB_PATH = Path("music.db")
 
-def load_config(config_path: Path = CONFIG_FILE):
-    if not config_path.exists():
-        return {"music_directory": DEFAULT_MUSIC_DIR.name}
-    with open(config_path, "r") as file:
-        return json.load(file)
+# load .env file
+load_dotenv()
 
-def save_config(config: dict[str, Any]):
-    if not CONFIG_DIR.exists():
-        CONFIG_DIR.mkdir(parents=True, exist_ok=True)
-    with open(CONFIG_FILE, "w") as file:
-        json.dump(config, file, indent=4)
+# access environment variables
+MUSIC_LIBRARY_PATH = os.getenv("MUSIC_LIBRARY_PATH", DEFAULT_MUSIC_DIR)
+# DATABASE_PATH = Path(os.getenv("DATABASE_PATH", DEFAULT_DB_PATH))
+# DEBUG = os.getenv("DEBUG", "false").lower() == "true"
