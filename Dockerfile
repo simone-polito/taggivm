@@ -10,4 +10,4 @@ RUN pip install taggivm-0.0.1-py3-none-any.whl
 CMD ["bash"]
 # ENTRYPOINT ["bash"]
 # ENTRYPOINT ["taggivm"]
-# CMD ["scan"]
+# CMD ["scan"] 

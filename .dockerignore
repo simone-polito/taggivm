@@ -5,3 +5,7 @@
 
 LICENSE
 README.md
+
+.db
+.db-shm
+.db-wal

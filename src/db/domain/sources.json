@@ -1,0 +1,26 @@
+[
+  {
+    "name": "RYM",
+    "base_url": "https://rateyourmusic.com"
+  },
+  {
+    "name": "Genius",
+    "base_url": "https://genius.com"
+  },
+  {
+    "name": "Discogs",
+    "base_url": "https://www.discogs.com"
+  },
+  {
+    "name": "Spotify",
+    "base_url": "https://open.spotify.com"
+  },
+  {
+    "name": "Wikipedia",
+    "base_url": "https://wikipedia.org"
+  },
+  {
+    "name": "MusicBrainz",
+    "base_url": "https://musicbrainz.org"
+  }
+]

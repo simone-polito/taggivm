@@ -12,7 +12,7 @@ license-files = ["LICEN[CS]E*"]
 dependencies = [
     "click",
     "python-dotenv"
-]
+    ]
 
 [project.scripts]
 taggivm = "cli:cli"
